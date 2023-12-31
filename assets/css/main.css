@@ -26,7 +26,6 @@
     font-weight:300;
     font-style:normal
 }
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{
     font-family:sans-serif;
     -ms-text-size-adjust:100%;
@@ -1577,4 +1576,14 @@ body{
     -webkit-transition-delay:.16s;
     transition-delay:.16s
 }
- 
+.link{
+    color:white;
+    text-decoration: underline;
+}
+.list{
+    font-size: 18px;
+}
+a, a:visited, a:hover, a:active {
+    color: white; /* Regular and visited link color */
+      /* Optional: remove underline, if desired */
+}
