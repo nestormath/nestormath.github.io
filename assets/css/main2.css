@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Montserrat';
     src: url("fonts/Montserrat-Black.eot");
@@ -43,11 +44,11 @@ body {
 
 article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
     display: block;
-    max-width: 1390px;
+    max-width: 91vw;
 }
 header {
     display: block;
-    max-width: 1500px;
+    max-width: 94vw;
 }
 
 /* Changing the font for all heading elements to Courier New, monospace */
