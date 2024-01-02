@@ -168,13 +168,13 @@ td,th{
     padding:0
 }
 ::-moz-selection{
-    background:#FFF498
+    background:rgba(255, 255, 255, 0.5);
 }
 ::selection{
-    background:#FFF498
+    background:rgba(255, 255, 255, 0.5);
 }
 ::-moz-selection{
-    background:#FFF498
+    background:rgba(255, 255, 255, 0.5);
 }
 img::-moz-selection{
     background:transparent
@@ -1441,12 +1441,16 @@ body{
     position:relative;
     width:100%;
     height:100%;
-    overflow:hidden
+    overflow:hidden;
+    -webkit-user-select: text;
+    user-select: text;
 }
 .perspective--modalview{
     position:fixed;
     -webkit-perspective:1500px;
-    perspective:1500px
+    perspective:1500px;
+    -webkit-user-select: text;
+    user-select: text;
 }
 .container{
     position:relative;
@@ -1457,7 +1461,9 @@ body{
     -webkit-transition:-webkit-transform .4s;
     transition:-webkit-transform .4s;
     transition:transform .4s;
-    transition:transform .4s, -webkit-transform .4s
+    transition:transform .4s, -webkit-transform .4s;
+    -webkit-user-select: text;
+    user-select: text;
 }
 .modalview .container{
     position:absolute;
@@ -1473,12 +1479,18 @@ body{
     -webkit-transition:-webkit-transform .4s;
     transition:-webkit-transform .4s;
     transition:transform .4s;
-    transition:transform .4s, -webkit-transform .4s
+    transition:transform .4s, -webkit-transform .4s;
+    -webkit-user-select: text;
+    user-select: text;
+
+    
 }
 .effect-rotate-left--animate .container{
     -webkit-transform:translateZ(-1800px) translateX(-50%) rotateY(45deg);
     transform:translateZ(-1800px) translateX(-50%) rotateY(45deg);
-    outline:30px solid #0f33ff
+    outline:30px solid #0f33ff;
+    -webkit-user-select: text;
+    user-select: text;
 }
 .outer-nav{
     position:absolute;
@@ -1587,3 +1599,14 @@ a, a:visited, a:hover, a:active {
     color: white; /* Regular and visited link color */
       /* Optional: remove underline, if desired */
 }
+.text {
+    -webkit-user-select: text;
+    user-select: text;
+    }
+    .link h3::after {
+        content: "";
+        display: inline-block;
+    }
+    .emoji {
+        text-decoration: none;
+    }
