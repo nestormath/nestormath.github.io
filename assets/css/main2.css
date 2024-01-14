@@ -75,14 +75,14 @@ header {
 }
 @media (min-width: 1515px) {
     article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
-        display: flex;
+        display: block;
         max-width: 82vw;
         margin:0;
         padding:0;
         
     }
     header {
-        display: flex;
+        display: block;
         max-width: 93vw;
     }
     .header{
