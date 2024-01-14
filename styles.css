@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+ 
+  
+}
+
+article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
+  display: block;
+  max-width: 91vw;
+}
+@media (min-width: 1515px) {
+  article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
+      display: block;
+      max-width: 82vw;
+  }
+  header {
+      display: block;
+      max-width: 90vw;
+  }
+}
+header {
+  display: block;
+  max-width: 94vw;
+}
